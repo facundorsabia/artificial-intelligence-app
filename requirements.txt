@@ -2,4 +2,4 @@ streamlit
 python-dotenv
 google-generativeai
 IPython
-python==3.9.7
+python==3.10
