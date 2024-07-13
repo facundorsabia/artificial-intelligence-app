@@ -17,11 +17,7 @@ load_dotenv()
 
 #GEMINI API Configuration
 
-
-
-GOOGLE_API_KEY= os.getenv('GOOGLE_API_KEY')
-
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 model = genai.GenerativeModel('gemini-1.0-pro')
 
